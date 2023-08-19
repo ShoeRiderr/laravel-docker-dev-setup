@@ -40,4 +40,46 @@ After that in CMD run:
 
 `docker-compose up -d server`
 
+### Setup for Vue and React Apps (for Vite setup)
+
+To show your js framework content you have to configure `vite.config.js` file.
+For Vue setup the content of the file will look like this:
+```
+import { defineConfig } from 'vite';
+import laravel from 'laravel-vite-plugin';
+import vue from '@vitejs/plugin-vue'
+
+export default defineConfig({
+    server: {
+        host: '0.0.0.0',
+        hmr: {
+            host: 'localhost'
+        },
+    },
+    plugins: [
+
+        vue(),
+
+        laravel({
+            input: ['resources/css/app.css', 'resources/js/app.js'],
+            refresh: true,
+        }),
+    ],
+});
+```
+
+The most important is this part:
+
+```
+server: {
+   host: '0.0.0.0',
+   hmr: {
+      host: 'localhost'
+   },
+},
+```
+
+Inside the hmr we define the host on which we want to set Hot Module Replacement.
+Since we will publish our site locally so the value will be localhost.
+
 Finish, you can visit [http://localhost:8000/](http://localhost:8000/) site
