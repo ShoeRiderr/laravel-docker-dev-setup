@@ -83,6 +83,6 @@ server: {
 ```
 
 Inside the hmr we define the host on which we want to set Hot Module Replacement.
-Since we will publish our site locally so the value will be localhost.
+Since we will be publishing our site locally, the value will be localhost.
 
 Finish, you can visit [http://localhost:8000/](http://localhost:8000/) site
