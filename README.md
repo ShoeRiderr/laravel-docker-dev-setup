@@ -1,8 +1,9 @@
 ## How to create your project?
 
 To create your Laravel project you have to run the command:
-
-`docker-compose run --rm composer create-project laravel/laravel .`
+```
+docker-compose run --rm composer create-project laravel/laravel .
+```
 
 This will create a new Laravel project inside the src folder.
 
@@ -38,7 +39,9 @@ Start by configuring the generating and configuring the .evn file according to t
 
 After that in CMD run:
 
-`docker-compose up -d server`
+```
+docker-compose up -d server
+```
 
 ### Setup for Vue and React Apps (for Vite setup)
 
