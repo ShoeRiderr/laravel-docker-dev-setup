@@ -21,7 +21,7 @@ Replacements:
 
 Start by configuring the generating and configuring the .evn file according to the following steps:
 1. in the root directory run cp src/.env.example .env
-2. inside the .env file change the following fields:
+2. inside the .env file change replace following variables with the following fields:
    `
      DB_CONNECTION=mysql
      DB_HOST=mysql
