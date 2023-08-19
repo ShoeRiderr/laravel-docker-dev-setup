@@ -22,5 +22,5 @@ Thanks to "utility containers" there are some command replacements.
 Make sure your server is running!
 
 Replacements:
-- `php artisan <command>` : `docker-compose --rm artisan <command>`
-- `npm <command>` : `docker-compose --rm npm <command>` 
+- `php artisan <command>` : `docker-compose run --rm artisan <command>`
+- `npm <command>` : `docker-compose run --rm npm <command>` 
