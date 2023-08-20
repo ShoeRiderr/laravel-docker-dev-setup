@@ -82,16 +82,16 @@ server: {
 },
 ```
 
-Inside the hmr we define the host on which we want to set Hot Module Replacement.
+Inside the hmr, we define the host on which we want to set Hot Module Replacement.
 Since we will be publishing our site locally, the value will be localhost.
 
-After all these step run this command to start publish your vite code:
+After all these steps run this command to start publishing your Vite code:
 
 ```
 docker-compose run --rm --service-ports npm run dev
 ```
 
-The flag `--service-ports` is important because it will expose ports according to these defined in `docker-compose.yaml` and `src/vite.config.js` files.
+The flag `--service-ports` is important because it will expose ports according to those defined in the `docker-compose.yaml` and `src/vite.config.js` files.
 By default `vite` expose port `5173`.
 
 Finish, you can visit [http://localhost:8000/](http://localhost:8000/) site
