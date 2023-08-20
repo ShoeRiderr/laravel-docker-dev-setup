@@ -41,5 +41,8 @@ services:
     image: node:latest
     working_dir: /var/www/html
     entrypoint: ['npm']
+    profiles: ["npm"]
+    ports:
+      - '5173:5173'
     volumes:
       - ./src:/var/www/html
