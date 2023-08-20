@@ -95,3 +95,11 @@ The flag `--service-ports` is important because it will expose ports according t
 By default `vite` expose port `5173`.
 
 Finish, you can visit [http://localhost:8000/](http://localhost:8000/) site
+
+## Extra tips
+
+- After making some changes in the `routes` folder make sure that you clear the cache before trying your newly added routes. You can do it by typing in CMD the following command:
+
+```
+docker-compose run --rm artisan optimize
+```
