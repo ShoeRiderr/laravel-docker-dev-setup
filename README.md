@@ -1,6 +1,12 @@
 ## How to create your project?
 
-To create your Laravel project first create the `src` folder inside the root folder. After that run this command:
+To create your Laravel project first start the server.
+
+```
+docker-compose up -d server
+```
+
+Then create the `src` folder inside the root folder. After that run this command:
 ```
 docker-compose run --rm composer create-project laravel/laravel .
 ```
